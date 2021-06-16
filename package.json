@@ -1,0 +1,51 @@
+{
+  "name": "@focuslabs/ofuscadorjs",
+  "version": "0.0.1",
+  "description": "Ofuscador JS",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "gulp",
+    "audit": "npm audit",
+    "lint": "eslint ."
+  },
+  "pre-commit": [
+    "lint",
+    "audit",
+    "test"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-security": "^1.4.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=10.9.0",
+    "npm": ">=6.13.0",
+    "yarn": ">=1.20.0"
+  },
+  "contributors": [
+    "Elias Manriquez <eamanriquez@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://www.u-payments.com",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express-jwt": "^6.0.0",
+    "gitlog": "^4.0.4",
+    "javascript-obfuscator": "^2.15.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "uuid": "^8.3.2"
+  }
+}
